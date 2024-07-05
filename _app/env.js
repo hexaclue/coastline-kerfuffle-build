@@ -1,0 +1,1 @@
+export const env={"PUBLIC_WS_URL":"wss://coastline-kerfuffle.hexaclue.dev/ws","PUBLIC_PING_URL":"https://coastline-kerfuffle.hexaclue.dev/ping"}

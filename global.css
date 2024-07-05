@@ -1,0 +1,101 @@
+:root {
+    --ease-out-cubic: cubic-bezier(0.33, 1, 0.68, 1);
+    --ridge-color: hsl(0, 0%, 100%, .5);
+    --primary-color: hsl(270, 100%, 75%);
+}
+
+body {
+    background-color: white;
+    margin: 0;
+    font-family: Rubik, Roboto, Arial, sans-serif;
+}
+
+canvas {
+    background-color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    margin: 0 0 1rem 0;
+}
+
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 0.5rem 0;
+}
+
+p {
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin: 0 0 1.5rem 0;
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+a {
+    color: var(--primary-color);
+}
+
+.fullscreen-container main {
+    margin: auto;
+    padding: 3rem;
+    box-sizing: border-box;
+    width: min(calc(100vw - 2rem), 50rem);
+    max-height: calc(100vh - 2rem);
+    overflow-y: auto;
+    color: white;
+    background-color: hsla(0, 0%, 0%, 0.75);
+    border-radius: 1rem;
+    text-align: center;
+
+    /* backdrop-filter: blur(24px); */
+}
+
+.flex-row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-row h1,
+.flex-row h2,
+.flex-row h3,
+.flex-row h4,
+.flex-row h5,
+.flex-row h6 {
+    margin: 0;
+}
+
+@keyframes glinster-border {
+    0% {
+        border-color: hsl(140, 100%, 50%);
+    }
+
+    25% {
+        border-color: hsl(180, 100%, 50%);
+    }
+
+    50% {
+        border-color: hsl(300, 100%, 75%);
+    }
+
+    75% {
+        border-color: hsl(270, 100%, 65%);
+    }
+
+    100% {
+        border-color: hsl(140, 100%, 50%);
+    }
+}
